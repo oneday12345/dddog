@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: catcat
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: catcat
   template:
     metadata:
       labels:
-        app: ray
+        app: catcat
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/catcat:latest
+        name: catcat
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: Site
-          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+          value: "https://github.com/oneday12345/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "72018d39-f6d6-6162-43bb-5738f6469b70"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vlmmm"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "0cadd352-3d8b-312c-843e-a80381fc3cb5"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vmlll"
         - name: Share_Path
           value: "/v2link"
